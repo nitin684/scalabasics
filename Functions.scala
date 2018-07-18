@@ -29,31 +29,30 @@ object Functions {
       
       higherOrderfuncEx(25, multiplyBy2)        // Passing a function as parameter  
   }  
-  
   /* Non-Parameterized Function */
   def functionExample()  {          
-	    println("This is a simple function")  
+      println("This is a simple function")  
   }
   /* Function with = operator */
   def retfunctionExample():Any = {       
-		  var a:Any = 10  
-				  a  
+      var a:Any = 10  
+       a  
   }  
   /* Parameterized Function */
   def functionExample(a:Int, b:Int) = {  
-		  var c = a+b  
-		  println("*****Parametrized function invoked*****" +"\n"+ c)  
+      var c = a+b  
+      println("*****Parametrized function invoked*****" +"\n"+ c)  
   }  
   /* Recursion Function */
   def recursionfuncEx(a:Int, b:Int):Int = {  
-		  if(b == 0)          // Base condition  
-			  0  
-		  else  
-			  a + recursionfuncEx(a,b-1)  
+      if(b == 0)          // Base condition  
+	0  
+      else  
+	a + recursionfuncEx(a,b-1)  
   }  
   /* Parameters with default values as 0 */
   def defaultfuncEx(a:Int = 0, b:Int = 0):Int = {     
-		  a+b  
+      a+b  
   }
   /* Function With Named Parameter */
   def namedparamfuncEx(a:Int, b:Int):Int = {  
