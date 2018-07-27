@@ -28,6 +28,22 @@ class Student(id: Int, name: String) {
   }
 }
 
+/* Singleton Object : an object which is declared by using object keyword instead by class. */
+/* The methods we declare inside Scala singleton object are globally accessible, No object is required to call methods declared inside singleton object. */
+object SingletonObject{  
+    def hello(){  
+        println("Hello, This is Singleton Object")  
+    }  
+}  
+
+/* Companion Object : a class with same name as singleton object, it is called companion class 
+ * and the singleton object is called companion object. */
+class ComapanionClass{  
+    def hello(){  
+        println("Hello, this is Companion Class.")  
+    }  
+}  
+
 object MainObject {
   def main(args: Array[String]) {
     var s = new SampleClass() // Creating an object  
@@ -47,12 +63,16 @@ object MainObject {
 
     /* Anonymous object : An object which has no reference name is called anonymous object.  */
     new SampleClass().add(10,10);
+    
+    println("*****Testing Singleton Object*****")  
+    SingletonObject.hello()        // No need to create object. 
+    
+    /* CompanoinObject */
+    println("*****Testing CompanoinClass and CompanoinObject*****")
+    new ComapanionClass().hello()  
+    println("And this is Companion Object.")
+    
   }
 }
-
-
-
-
-
 
 
