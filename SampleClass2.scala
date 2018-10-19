@@ -25,6 +25,14 @@ class Student2(id: Int, name: String) {
     this.age = age
   }
 }
+/* Constructor Overloading */
+class Student3(id: Int, name: String) {
+  def this(id: Int, name: String, age: Int) {
+    this(id, name) // Calling primary constructor, and it is first line  
+    println(id + " " + name + " " + age)
+  }
+  println(id + " " + name)
+}
 
 object MainObject2 {
   def main(args: Array[String]) {
@@ -38,8 +46,14 @@ object MainObject2 {
     s1.showDetails()
 
     println("*****Testing auxiliary Constructor*****")
-    var s2 = new Student2(101, "Rama", 20);
+    var s2 = new Student2(100, "Rama", 20);
+    var s21 = new Student2(100, "Rama");
     s2.showDetails()
+    s21.showDetails()
+    
+    println("*****Testing Constructor OverLoading*****")
+    var s3 = new Student3(102, "Laxman");
+    var s4 = new Student3(103, "Bharat",24);
 
   }
 
