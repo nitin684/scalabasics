@@ -41,12 +41,14 @@ object Functions {
 		var MultiLExp2 = addMultiExp2(10, 10)
 		println("*****Result of MultiLine Expression*****" + "\n" + MultiLExp1 + "\n" + MultiLExp2)
 
-		/* Function Currying : a technique of transforming a function that takes multiple arguments into a function that takes a single argument. */
+		/* Function Currying : a technique of transforming a function that takes multiple arguments into a function that takes a 
+		 * single argument. */
 		var funcCurry1 = addFuncCurrying(10)(10)
 		println("*****Result of Function Currying*****" + "\n" + "10 + 10 = " + funcCurry1)
 		var var1 = 10
 		var var2 = 43
-		var addIt = addFuncCurrying(var1)(_) /* addIt variable has been transformed to a function with one input parameter which will be the 2nd i/p for add()() function.  */
+		var addIt = addFuncCurrying(var1)(_) /* addIt variable has been transformed to a function with one input parameter which 
+		will be the 2nd i/p for add()() function.  */
 		var funcCurry2 = addIt(var2)
 		println(var1 + " + " + var2 + " = " + funcCurry2)
 
