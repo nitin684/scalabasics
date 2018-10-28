@@ -43,4 +43,25 @@ println( "Odd Sum is " + totalSelectValues (List(1,2,3,4,5), e => e % 2 == 1 ))
                                                   //> Odd Sum is 9
 
 
+def showStringInterpolation(){
+		var pi = 3.14
+		var s1 = "Scala string example"
+    var version = 2.12
+		var s2 = "Scala \tstring \nexample"
+    var s3 = raw"Scala \tstring \nexample"
+    
+    println(s"value of pi = $pi")
+		println(f"This is $s1%s, scala version is $version%2.2f")
+		println(s2)
+    println(s3)
+}                                                 //> showStringInterpolation: ()Unit
+
+showStringInterpolation()                         //> value of pi = 3.14
+                                                  //| This is Scala string example, scala version is 2.12
+                                                  //| Scala 	string 
+                                                  //| example
+                                                  //| Scala \tstring \nexample
+
+
+
 }

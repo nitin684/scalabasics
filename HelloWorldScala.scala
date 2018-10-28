@@ -62,6 +62,7 @@ object HelloWorldScala {
       case _ => println("No")
     }
 
+    result = search()
     result = search("Hello")
 
     println("Done for the day")
@@ -75,10 +76,12 @@ object HelloWorldScala {
     println("Hello Scala")
   }
 
-  def search(a: Any): Any = a match {
+  def search(a: Any): Any = 
+   a match {
     case 1 => println("One")
     case "Two" => println("Two")
     case "Hello" => println("Hello")
     case _ => println("No")
   }
+  
 }
