@@ -13,6 +13,7 @@ class ArrayExample(arr:Array[Int]){
 class Array2DExample(arr:Array[Array[Int]]){  
     var rows = arr.length
     var cols = arr(0).length
+    
     def show2D(){  
         for {
            i <- 0 until rows
