@@ -3,5 +3,3 @@ This repository contains basic programs for scala learners to understand the sca
 
 
 Download Scala Worksheet and SBT (Simple Build Tool)
-
-DTDC AWB number is : T70568636
