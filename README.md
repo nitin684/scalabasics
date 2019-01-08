@@ -4,4 +4,3 @@ This repository contains basic programs for scala learners to understand the sca
 
 Download Scala Worksheet and SBT (Simple Build Tool)
 
-302-513-7896
